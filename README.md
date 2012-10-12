@@ -26,6 +26,7 @@ otakusa
  
  
 ## phpunit
+	/Applications/MAMP/bin/php/php5.4.4/bin/pear config-set auto_discover 1
     /Applications/MAMP/bin/php/php5.4.4/bin/pear install pear.phpunit.de/PHPUnit
 
 /Applications/MAMP/bin/php/php5.4.4/conf/php.ini
