@@ -1,5 +1,6 @@
 <?php
 namespace otakusa\net\http;
+use \otakusa\File;
 /**
  * query文字列を作成する
  * @author tokushima
@@ -29,7 +30,7 @@ class Query{
 	 */
 	static public function expand_vars(&$vars,$value,$name=null,$array=true){
 		if(!is_array($vars)) $vars = array();
-		if($value instanceof \org\rhaco\io\File){
+		if($value instanceof File){
 			$vars[] = array($name,$value);
 		}else{
 			$ar = array();
